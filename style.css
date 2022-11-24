@@ -1,0 +1,871 @@
+*{
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+} */
+
+.about{
+    background-image: url(elements/bg-about.png);
+    background-repeat: no-repeat;
+}
+
+li{
+    list-style: none;
+}
+
+.logo a:hover{
+    text-decoration: none;
+}
+
+input[type=checkbox]{
+    display: none;
+   } 
+
+.hamburger{
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.navbar{
+    z-index: 10000;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #132C33;
+    color: #fff;
+   }
+   .nav-links a {
+    color: #fff;
+   }
+   .logo p{
+       margin-top: 20px;
+    color: #0DCEDA;
+       font-size: 30px;
+    margin-left: 100px;
+   }
+   .logo span{
+    color: #6EF3D6;
+   }
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li {
+       margin-top: 20px;
+       text-align: center;
+    padding: 5px 14px;
+   }
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+.about-head{
+    margin-left: -20px;
+    margin-top: 200px;
+    color: #132C33;
+    font-size: 50px;
+}
+
+.about-head span{
+    color: #09A8CE;
+}
+
+.about-subhead{
+    margin-left: -20px;
+    font-size: 25px;
+}
+
+.about-img img{
+    margin-top: 200px;
+    width: 500px;
+}
+
+.about-button{
+    background-color: #126E82;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-left: -25px;
+    margin-bottom: 250px;
+}
+
+.program{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: #132C33;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.prog-head{
+    font-size: 40px;
+}
+
+.prog-head span{
+    color: #0DCEDA;
+}
+
+.prog-subhead{
+    font-size: 17px;
+}
+
+.prog-line img{
+    height: 5px;
+    margin-top: -150px;
+    margin-bottom: -80px;
+}
+
+.prog-img img{
+    width: 230px;
+}
+
+.on-vid{
+    font-size: 39px;
+}
+
+.prog-text{
+    margin-top: -80px;
+    font-size: 15px;
+}
+
+.prog-button{
+    background-color: #126E82;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+
+.testimoni{
+    font-size: 49px;
+    text-align: center;
+    color: white;
+    background-color: #51C4D3;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.testi-head{
+    font-size: 40px;
+}
+
+.testi-head span{
+    color: #132C33;
+}
+
+.testi-subhead{
+    font-size: 17px;
+}
+
+.testi-line img{
+    width: 380px;
+    margin-top: -150px;
+    margin-bottom: -80px;
+}
+
+.testi-upper{
+    padding-bottom: 50px;
+}
+
+.testi-img img{
+    transition: transform .2s;
+}
+
+.testi-img img:hover{
+    transform: scale(1.2);
+}
+
+.kontak{
+    font-size: 40px;
+    text-align: center;
+    color: #132C33;
+    padding-bottom: 100px;
+    background-image: url(elements/bg-kontak.png);
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.kon-subhead{
+    font-size: 17px;
+}
+
+.kon-line img{
+    height: 5px;
+    margin-top: -150px;
+    margin-bottom: -80px;
+}
+
+.kon-inf-left{
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.kon-inf-right{
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.kon-form-upper-2{
+    margin-bottom: 25px;
+}
+
+.kon-button{
+    background-color: #126E82;
+    display: block;
+    border: none;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.daftar{
+    background-image: url(elements/bg.png);
+    background-repeat: no-repeat;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.daftar .logo-daftar img{
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.daftar-form{
+    color: #132C33;
+    margin-bottom: 25px;
+}
+
+.daf-button{
+    background-color: #126E82;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+
+.daftar-sk{
+    background-image: url(elements/bg.png);
+    background-repeat: no-repeat;
+    font-size: 40px;
+    text-align: center;
+    color: #132C33;
+    padding-bottom: 50px;
+}
+
+.daftar-sk .logo-daftar-sk img{
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.daftar-sk .daf-sk-head{
+    font-size: 40px;
+}
+
+.daftar-sk .daf-sk-head span{
+    color: #0DCEDA;
+}
+
+.daftar-sk p{
+    font-size: 25px;
+}
+
+.login-button{
+    background-color: #132C33;
+    border: none;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    border: 5px solid #0DCEDA;
+    margin-top: -10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .testi-img img{
+        width: 200px;
+        padding-bottom: 10px;
+    }
+
+
+    .testi-text{
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .testi-text-sp{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 977.60px) and (max-width: 1180px) {
+    .logo p{
+        margin-left: 100px;
+       }
+    .menu { 
+        display:none;
+        position: fixed;
+        background-color:#132C33;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        padding-bottom: 1000px;
+       }
+       .menu li + li {
+        margin-top: 12px;
+       }
+       input[type=checkbox]:checked ~ .menu{
+        display: block;
+       }
+       .hamburger {
+        margin-top: 15px;
+        display: block;
+       }
+       .dropdown {
+        left: 50%;
+        top: 30px;
+       }
+
+    .on-vid{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .testi-img img{
+        width: 270px;
+        padding-bottom: 10px;
+    }
+
+    .testi-text{
+        text-align: left;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .testi-text-sp{
+        font-size: 16px;
+    }
+
+    .kon-inf-left{
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .kon-inf-right{
+        font-size: 30px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .kon-form-upper-2{
+        margin-bottom: 25px;
+    }
+
+    .kon-button{
+        background-color: #126E82;
+        display: block;
+        border: none;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+    }
+
+    .about-head{
+        margin-left: -20px;
+        margin-top: 160px;
+        color: #132C33;
+        font-size: 50px;
+    }
+    
+    .about-head span{
+        color: #09A8CE;
+    }
+    
+    .about-subhead{
+        margin-left: -20px;
+        font-size: 25px;
+    }
+    
+    .about-img img{
+        margin-top: 160px;
+        width: 450px;
+    }
+    
+    .about-button{
+        background-color: #126E82;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        margin-left: -25px;
+        margin-bottom: 250px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 977px){
+    .logo img{
+        margin-left: 100px;
+        width: 200px;
+        margin-left: 100px;
+       }
+    .menu { 
+        display:none;
+        position: fixed;
+        background-color:#132C33;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        padding-bottom: 1000px;
+       }
+       .menu li + li {
+        margin-top: 12px;
+       }
+       input[type=checkbox]:checked ~ .menu{
+        display: block;
+       }
+       .hamburger {
+        margin-top: 15px;
+        display: block;
+       }
+       .dropdown {
+        left: 50%;
+        top: 30px;
+       }
+
+    .on-vid{
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .testi-img img{
+        width: 270px;
+        padding-bottom: 10px;
+    }
+
+    .testi-text{
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .testi-text-sp{
+        font-size: 22px;
+    }
+
+    .kon-inf-left{
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .kon-inf-right{
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .kon-form-upper-2{
+        margin-bottom: 25px;
+    }
+
+    .kon-button{
+        background-color: #126E82;
+        display: block;
+        border: none;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+    }
+
+    .about-head{
+        margin-left: -20px;
+        margin-top: 160px;
+        color: #132C33;
+        font-size: 40px;
+    }
+    
+    .about-head span{
+        color: #09A8CE;
+    }
+    
+    .about-subhead{
+        margin-left: -20px;
+        font-size: 20px;
+    }
+    
+    .about-img img{
+        margin-top: 200px;
+        width: 400px;
+    }
+    
+    .about-button{
+        background-color: #126E82;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        margin-left: -25px;
+        margin-bottom: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .logo p{
+        margin-left: 20px;
+       }
+    .menu { 
+        display:none;
+        position: fixed;
+        background-color:#132C33;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        padding-bottom: 1000px;
+       }
+       .menu li{
+           padding-top: 50px;
+           font-size: 25px;
+            margin-top: 12px;
+       }
+       input[type=checkbox]:checked ~ .menu{
+        display: block;
+       }
+       .hamburger {
+           margin-right: 20px;
+        margin-top: 20px;
+        display: block;
+       }
+       .dropdown {
+        left: 50%;
+        top: 30px;
+       }
+
+    .program{
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        background-color: #132C33;
+    }
+    
+    .prog-head{
+        font-size: 40px;
+    }
+    
+    .prog-head span{
+        color: #0DCEDA;
+    }
+
+    .prog-subhead{
+        font-size: 20px;
+    }
+    
+    .prog-line img{
+        height: 5px;
+        width: 250px;
+        margin-top: -90px;
+        margin-bottom: -80px;
+    }
+
+    .on-vid{
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+
+    .prog-img img{
+        width: 250px;
+    }
+    
+    .prog-text{
+        margin-top: -90px;
+        font-size: 15px;
+    }
+
+    .prog-button{
+        background-color: #126E82;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 25px;
+        margin-top: 20px;
+    }
+
+    .testimoni{
+        font-size: 49px;
+        text-align: center;
+        color: white;
+        background-color: #51C4D3;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .testi-head{
+        font-size: 40px;
+    }
+    
+    .testi-head span{
+        color: #132C33;
+    }
+    
+    .testi-subhead{
+        font-size: 17px;
+    }
+    
+    .testi-line img{
+        width: 380px;
+        margin-top: -150px;
+        margin-bottom: -80px;
+    }
+    
+    .testi-text{
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .testi-img img{
+        width: 250px;
+        padding-bottom: 20px;
+    }
+
+    .kon-inf-left{
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .kon-inf-right{
+        font-size: 30px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .kon-form-upper{
+        margin-bottom: 25px;
+    }
+
+    .kon-form-upper-2{
+        margin-bottom: 25px;
+    }
+
+    .kon-button{
+        background-color: #126E82;
+        display: block;
+        border: none;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+    }
+
+    .daftar{
+        background-image: url(elements/bg.png);
+        background-repeat: no-repeat;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        padding-bottom: 50px;
+    }
+    
+    .daftar .logo-daftar img{
+        width: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about-head{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: hsl(193, 46%, 14%);
+        font-size: 40px;
+    }
+    
+    .about-head span{
+        color: #09A8CE;
+    }
+    
+    .about-subhead{
+        color: #126E82;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .about-img img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        margin-top: -200px;
+        margin-bottom: 50px;
+    }
+    
+    .about-button{
+        background-color: #126E82;
+        border: none;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 25px;
+    }
+    
+    .login-button{
+        background-color: #126E82;
+        border: none;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 25px;
+    }
+}
